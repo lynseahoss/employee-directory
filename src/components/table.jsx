@@ -31,6 +31,7 @@ export default class Table extends Component {
           <thead>
             <tr>
               <th scope="col">#</th>
+              <th scope="col">Employee Image</th>
               <th scope="col">Name</th>
               <th scope="col">Email</th>
               <th scope="col">Cell Phone</th>
