@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import User from "../lib/user.json";
 import TableBody from "./TableBody";
+import "./style.css";
 export default class Table extends Component {
   state = {
     mainList: [],
@@ -55,8 +56,12 @@ export default class Table extends Component {
     //return is a callback
     return (
       <>
-      <h1>Employee Directory</h1>
-        <input onChange={event => this.searchHandler(event.target.value)} />
+      <h1 >Employee Directory</h1>
+      <div className="input-group"> 
+      <div className="input-group-prepend">
+        <span className="input-group-text">First and last name</span></div>
+        <input onChange={event => this.searchHandler(event.target.value)} className="form-control" placeholder="Employee's First and Last Name" />
+        </div>
         <table className="table">
           <thead>
             <tr>
@@ -78,7 +83,7 @@ export default class Table extends Component {
             ))}
           </tbody>
         </table>  
-      </> 
+      </>
     );
   }
 } 
