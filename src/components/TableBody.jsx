@@ -9,6 +9,7 @@ import React from 'react'
         <th scope="col">{props.User.email}</th>
         <th scope="col">{props.User.cell}</th>
       </tr>
+      
     )
 }
 

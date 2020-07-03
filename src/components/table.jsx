@@ -55,6 +55,7 @@ export default class Table extends Component {
     //return is a callback
     return (
       <>
+      <h1>Employee Directory</h1>
         <input onChange={event => this.searchHandler(event.target.value)} />
         <table className="table">
           <thead>
@@ -63,7 +64,7 @@ export default class Table extends Component {
               <th scope="col">Employee Image</th>
               <th scope="col" style={{cursor:'pointer'}}onClick={this.sortUser}>
                 Name {
-                  this.state.orderList === 'asc'? ('⬇'):(this.state.orderList === 'des' ? '⬆️':'')
+                  this.state.orderList === 'asc'? ('⬇🦄'):(this.state.orderList === 'des' ? '⬆🐵  ':'')
                 }
               </th>
               <th scope="col">Email</th>
@@ -76,8 +77,9 @@ export default class Table extends Component {
               <TableBody User={user} index={index} key={user.cell} />
             ))}
           </tbody>
-        </table>
-      </>
+        </table>  
+      </> 
     );
   }
-}
+} 
+ 
