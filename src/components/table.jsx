@@ -56,12 +56,15 @@ export default class Table extends Component {
     //return is a callback
     return (
       <>
-      <h1 >Employee Directory</h1>
+      <div class="container">
+      <h1>Employee Directory</h1>
+      <div className="jumbotron">
       <div className="input-group"> 
       <div className="input-group-prepend">
-        <span className="input-group-text">First and last name</span></div>
-        <input onChange={event => this.searchHandler(event.target.value)} className="form-control" placeholder="Employee's First and Last Name" />
+        <span className="input-group-text" id="inputLabel">Employee Name</span></div>
+        <input onChange={event => this.searchHandler(event.target.value)} className="form-control" placeholder="Enter First and Last Name" />
         </div>
+        
         <table className="table">
           <thead>
             <tr>
@@ -82,7 +85,9 @@ export default class Table extends Component {
               <TableBody User={user} index={index} key={user.cell} />
             ))}
           </tbody>
-        </table>  
+        </table> 
+        </div> 
+        </div>
       </>
     );
   }

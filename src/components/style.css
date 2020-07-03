@@ -1,3 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 h1{
     text-align: center;
+    margin-bottom: 1em;
+    font-family: 'Anton', sans-serif;
+}
+.container{
+    align-content: center;
+    margin-top: 2em;
+}
+.jumbotron{
+    background-color: rgb(70, 231, 252);
+}
+#inputLabel{
+    background-color: rgb(249, 136, 253);
+    color:white;
+    font-family: 'Anton', sans-serif;
+}
+input{
+    font-family: 'Anton', sans-serif;
+}
+.table{
+    color:white;
+    
 }
