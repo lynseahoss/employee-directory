@@ -3,7 +3,7 @@
 
 ## Project Description
 
-Fitness Tracker is a simple application meant for avid fitness clients to track their workouts along with logging new workouts. 
+
 
 The application is deployed on Heroku for the server to run and function properly.   
 
@@ -76,7 +76,7 @@ Cloud Server
 <details>
     <summary markdown="span">Click to expand Screenshot Details</summary>
  
-![Fitness Tracker](https://media.giphy.com/media/eJ3gcU9qZKJLAwXO54/giphy.gif)
+![Employee Directory](https://media.giphy.com/media/eJ3gcU9qZKJLAwXO54/giphy.gif)
 *Gif of Employee Tracker*
 
 </details>
